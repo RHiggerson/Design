@@ -1,0 +1,15 @@
+
+
+create TABLE [bikeshop].[dbo].[frequency] (
+    id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    Name varchar(25) Not Null
+);
+
+insert into dbo.Frequency (name) values ('Daily');
+insert into dbo.Frequency (name) values ('Weekly');
+insert into dbo.Frequency (name) values ('Bi-Weekly');
+insert into dbo.Frequency (name) values ('Monthly');
+
+
+
+select * from dbo.Frequency;
